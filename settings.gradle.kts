@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "AdbRecovery"
 include(":app")
+include(":module")
