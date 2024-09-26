@@ -20,12 +20,16 @@ class AdbRecoveryReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
         when (intent.action) {
             Intent.ACTION_BOOT_COMPLETED -> {
-                Log.d("AdbRecoveryReceiver", "onReceived ACTION_BOOT_COMPLETED")
+                Log.d(TAG, "onReceived ACTION_BOOT_COMPLETED")
                 scope.launch {
                     val ret = adbRepository.enable()
-                    Log.d("AdbRecoveryReceiver", "adbRepository.enable() ret=$ret")
+                    Log.d(TAG, "adbRepository.enable() ret=$ret")
                 }
             }
         }
+    }
+
+    private companion object {
+        const val TAG = "AdbRecoveryReceiver"
     }
 }
