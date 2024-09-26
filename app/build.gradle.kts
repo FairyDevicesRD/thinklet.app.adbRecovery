@@ -39,6 +39,9 @@ android {
 
 dependencies {
     implementation(libs.hilt.android)
+    implementation(libs.material)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
     ksp(libs.hilt.android.compiler)
     implementation(project(":module"))
 
