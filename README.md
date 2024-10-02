@@ -9,7 +9,7 @@
 1. リリースからAPKを取得します．
 2. 次のコマンドでTHINKLET（開発機）にインストールします．
    ```
-   adb install -g thinklet.app.adbRecovety.apk
+   adb install -g thinklet.app.adbRecovery.apk
    ```
 3. [scrcpy](https://github.com/Genymobile/scrcpy) で画面を表示しながら，下記のコマンドを実行し，Activityが立ち上がることを確認します．
    ```
